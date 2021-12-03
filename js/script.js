@@ -9,3 +9,49 @@ result = result + start;
     }
     alert (result);
 }
+
+function getStatistics () {
+    let pos = 0;
+    let neg = 0;
+    let zero = 0;
+    let even = 0;
+    let odd = 0;
+    let num = 0;
+    let number;
+
+for (num;num<4;num++) {
+    number  = +prompt('Input your number');
+    // console.log (number);
+}
+
+if (number>0) {
+pos++;
+console.log (pos);
+} 
+else if (number !== 0){
+    zero++;
+} 
+else if  (number<0){
+    neg++;
+}
+if (number % 2) {
+    odd++;
+}
+else  {
+    even++;
+}
+ alert (`Your result 
+ pos - ${pos}
+ neg - ${neg}
+ zero - ${zero}
+ even - ${even}
+ odd - ${odd}
+ `)
+}
+
+function getNum () {
+    let num =2;
+    for (num;num<5;num++) {
+console.log (num);
+    }
+}
