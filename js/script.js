@@ -4,7 +4,7 @@ function getSum () {
     let finich;
     finish = +prompt ('Input your finish number');
     let result = 0;
-    for (start;start<finish;start++) {
+    for (start;start<=finish;start++) {
 result = result + start;
     }
     alert (result);
@@ -19,26 +19,27 @@ function getStatistics () {
     let num = 0;
     let number;
 
-for (num;num<4;num++) {
+for (num;num<10;num++) {
     number  = +prompt('Input your number');
     // console.log (number);
-}
+
 
 if (number>0) {
 pos++;
-console.log (pos);
+
 } 
-else if (number !== 0){
-    zero++;
-} 
-else if  (number<0){
+else if (number<0){
     neg++;
+} 
+else if  (number===0){
+    zero++;
 }
 if (number % 2) {
     odd++;
 }
 else  {
     even++;
+}
 }
  alert (`Your result 
  pos - ${pos}
