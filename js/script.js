@@ -8,6 +8,7 @@ function getSum () {
 result = result + start;
     }
     alert (result);
+    console.log (typeof result);
 }
 
 function getStatistics () {
@@ -21,7 +22,7 @@ function getStatistics () {
 
 for (num;num<10;num++) {
     number  = +prompt('Input your number');
-    // console.log (number);
+    console.log (number);
 
 
 if (number>0) {
@@ -56,3 +57,53 @@ function getNum () {
 console.log (num);
     }
 }
+ function cAlculator () {
+
+
+     for (num;num<10;num++) {
+        let a = +prompt ('Input your  first number ');
+        let b = +prompt ('Input last number');
+        let c = +prompt ('Input your operator');
+        let continuation = confirm ("Want to continue?")
+     
+     }
+ }
+
+  function getDivider () {
+    let a = +prompt ('Input your  first number');
+    let b = +prompt ('Input last number');
+ let i =1;
+ let result1 = (a % i)===0;
+ let result2 = (b % i)===0;
+
+ 
+
+  }
+
+  function getDiv() {
+      let num ;
+      num = +prompt ('Input your number');
+      let divider = 1; 
+      
+    // while (num > divider) {
+    //     divider++;
+    //     num % divider !== 0
+    //     console.log (divider);
+    // }
+for (divider;num > divider;divider++ )
+
+if  (number % divider !==0) {
+alert (`Your result ${divider}`)
+}
+
+  }
+
+  function multiplicationTable () {
+      let i = 1;
+      let msg = " ";
+      while (i<11) {
+         msg+= i + 'x 3=' + (i*3)+ '<br>';
+         i++; 
+      }
+    document.write (msg);
+  }
