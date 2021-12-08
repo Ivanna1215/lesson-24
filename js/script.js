@@ -57,27 +57,26 @@ function getNum () {
 console.log (num);
     }
 }
- function cAlculator () {
-
-
-     for (num;num<10;num++) {
-        let a = +prompt ('Input your  first number ');
-        let b = +prompt ('Input last number');
-        let c = +prompt ('Input your operator');
-        let continuation = confirm ("Want to continue?")
+//  function cAlculator () {
+//      let num;
+//      for (num;num<10;num++) {
+//         // let a = +prompt ('Input your  first number ');
+//         // let b = +prompt ('Input last number');
+//         // let c = +prompt ('Input your operator');
+//          num = confirm ("Want to continue?");
      
-     }
- }
+//      }
+//  }
+
+
+
 
   function getDivider () {
     let a = +prompt ('Input your  first number');
     let b = +prompt ('Input last number');
- let i =1;
- let result1 = (a % i)===0;
- let result2 = (b % i)===0;
-
- 
-
+ let i = 1;
+//  let result1 = (a % i)===0;
+//  let result2 = (b % i)===0;
   }
 
   function getDiv() {
@@ -91,37 +90,21 @@ console.log (num);
     //     console.log (divider);
     // }
 for (divider;num > divider;divider++ )
-
 if  (number % divider !==0) {
 alert (`Your result ${divider}`)
 }
-
   }
 
   function multiplicationTable () {
-      let i = 1;
-      let msg = " ";
-      while (i<11) {
-         msg+= i + 'x 3=' + (i*3)+ '<br>';
-         i++; 
-      }
-    document.write (msg);
-   
-  }
-
-
-   
-  function tAsk9 () {
       for (let i = 1; i <=10; i++) {
           for (let j = 1; j <= 9; j++) {
               let num = i * j;
              let msg;
-            //  document.write ( ' '+num+ ' ');
-             document.write ( i+ ('x')+j+('= ') +num+' ');
+             document.write ( i+ ('x')+j+('=') +num+'<br>');
             //   msg+= i + ('x') + j+ ('= ') + num ;
 
           }
-       document.write ('<br>')
+       document.write ('<br> <br>')
       }
     
   }
