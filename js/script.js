@@ -106,4 +106,29 @@ alert (`Your result ${divider}`)
          i++; 
       }
     document.write (msg);
+   
   }
+
+
+   
+  function tAsk9 () {
+      for (let i = 1; i <=10; i++) {
+          for (let j = 1; j <= 9; j++) {
+              let num = i * j;
+             let msg;
+            //  document.write ( ' '+num+ ' ');
+             document.write ( i+ ('x')+j+('= ') +num+' ');
+            //   msg+= i + ('x') + j+ ('= ') + num ;
+
+          }
+       document.write ('<br>')
+      }
+    
+  }
+
+
+
+
+  
+     
+  
