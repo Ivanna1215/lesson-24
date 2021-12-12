@@ -179,43 +179,60 @@ function multiplicationTable() {
 
 function getDay () {
     let day;
-    let cOntin;
+    let cOntin = 1;
     let i = 1;
-do {
+    while (cOntin) {
     day = confirm('Monday');
     cOntin = confirm("Want to continue?"); 
 
- if (cOntin=true) {
+ if (cOntin) {
     day = confirm('Tuesday');
     cOntin = confirm("Want to continue?"); 
     
-    if (cOntin=true) {
+    if (cOntin) {
         day = confirm('Wednesday');
         cOntin = confirm("Want to continue?"); 
-        if (cOntin=true) {
+
+        if (cOntin) {
             day = confirm('Thursday');
             cOntin = confirm("Want to continue?"); 
-            if (cOntin=true) {
+            if (cOntin) {
                 day = confirm('Friday');
                 cOntin = confirm("Want to continue?"); 
-                if (cOntin=true) {
+                if (cOntin) {
                     day = confirm('Saturday');
                     cOntin = confirm("Want to continue?"); 
-                    if (cOntin=true) {
+                    if (cOntin) {
                         day = confirm('Sanday');
                         cOntin = confirm("Want to continue?");     
                 }
     
                 
             }
+            else {
+                alert ('1Error') 
+            }
+     }
+     else {
+         alert ('2Error')
      }
 
 
         }
+      else {
+        alert ('3Error')
+      }  
  }
+ else {
+    alert ('4Error')
+ }
+
+ }
+ else {
+    alert ('5Error')
  }
 }
-while (cOntin) 
+
 }
 
 
