@@ -129,6 +129,25 @@ function getCalculator() {
 
 }
 
+
+function toMoveNum () {
+    let num = prompt ('Input your number');
+    if (num>0) {
+        let amount = +prompt ('Input your amount');
+        let a = num.length;
+        let part_1 = num.slice(0,amount);
+        let part_2 = num.slice(amount);
+        let result = part_2+part_1;
+        alert (result);
+
+      
+    }
+   
+    else  {
+        alert ('This code is incorect')
+    } 
+}
+
 // function getNum() {
 //     let num = 2;
 //     for (num; num < 5; num++) {
@@ -158,19 +177,7 @@ function multiplicationTable() {
 
 }
 
-function toMoveNum () {
-    let num = prompt ('Input your number');
-    let amount = +prompt ('Input your amount');
-    console.log(num.length);
-    let a = num.length;
-    let part_1 = num.slice(0,amount);
-    console.log (part_1);
-    let part_2 = num.slice(amount);
-    console.log (part_2);
-    let result = part_2+part_1;
-    alert (result);
-    
-}
+
 
 
 
