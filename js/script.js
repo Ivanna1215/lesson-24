@@ -177,6 +177,46 @@ function multiplicationTable() {
 
 }
 
+function getDay () {
+    let day;
+    let cOntin;
+    let i = 1;
+do {
+    day = confirm('Monday');
+    cOntin = confirm("Want to continue?"); 
+
+ if (cOntin=true) {
+    day = confirm('Tuesday');
+    cOntin = confirm("Want to continue?"); 
+    
+    if (cOntin=true) {
+        day = confirm('Wednesday');
+        cOntin = confirm("Want to continue?"); 
+        if (cOntin=true) {
+            day = confirm('Thursday');
+            cOntin = confirm("Want to continue?"); 
+            if (cOntin=true) {
+                day = confirm('Friday');
+                cOntin = confirm("Want to continue?"); 
+                if (cOntin=true) {
+                    day = confirm('Saturday');
+                    cOntin = confirm("Want to continue?"); 
+                    if (cOntin=true) {
+                        day = confirm('Sanday');
+                        cOntin = confirm("Want to continue?");     
+                }
+    
+                
+            }
+     }
+
+
+        }
+ }
+ }
+}
+while (cOntin) 
+}
 
 
 
