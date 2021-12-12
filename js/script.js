@@ -11,6 +11,41 @@ function getSum() {
     console.log(typeof result);
 }
 
+
+function getDiv() {
+    let num;
+    num = +prompt('Input your number');
+
+    let amount = 0;
+    let result = 'Your result';
+    for (let divider = 1; divider < num; divider++) {
+        if ((num % divider) === 0) {
+            result = result + " " + divider;
+            amount++;
+        }
+    }
+    if (amount > 1) {
+        alert(result);
+        alert(`Amount divider ${amount}`);
+    }
+    else {
+        alert('Error');
+    }
+
+}
+
+
+function amountNumber() {
+    let num;
+    num = prompt('Input your number');
+    if (num > 0) {
+        alert(num.length);
+    } else {
+        alert(num.length - 1);
+    }
+
+}
+
 function getStatistics() {
     let pos = 0;
     let neg = 0;
@@ -51,25 +86,55 @@ function getStatistics() {
  `)
 }
 
-function getNum() {
-    let num = 2;
-    for (num; num < 5; num++) {
-        console.log(num);
+function getCalculator() {
+    let a;
+    let b;
+    let c;
+    let num;
+    let result;
+    do {
+        a = +prompt('Input your  first number ');
+        b = +prompt('Input last number');
+        c = prompt('Input your operator');
+       
+    switch (c) {
+        case '+':
+            result = a + b;
+            alert(result)
+            break;
+        case '-':
+            result = a- b;
+            alert (result);
+            break;
+            case '*':
+                result = a*b;
+                alert (result);
+                break;
+                case '/':
+                    result = a/b;
+                    alert (result);
+                    break;
+                    default:
+                        alert ('This code is incorect')
+                        break;
+
+                    
+                } 
+                num = confirm("Want to continue?");
+                
     }
+
+    while (num)   
+
+
 }
-//  function cAlculator () {
-//      let num;
-//      for (num;num<10;num++) {
-//         // let a = +prompt ('Input your  first number ');
-//         // let b = +prompt ('Input last number');
-//         // let c = +prompt ('Input your operator');
-//          num = confirm ("Want to continue?");
 
-//      }
-//  }
-
-
-
+// function getNum() {
+//     let num = 2;
+//     for (num; num < 5; num++) {
+//         console.log(num);
+//     }
+// }
 
 function getDivider() {
     let a = +prompt('Input your  first number');
@@ -78,8 +143,6 @@ function getDivider() {
     //  let result1 = (a % i)===0;
     //  let result2 = (b % i)===0;
 }
-
-
 
 function multiplicationTable() {
     for (let i = 1; i <= 10; i++) {
@@ -95,28 +158,21 @@ function multiplicationTable() {
 
 }
 
-
-function getDiv() {
-    let num;
-    num = +prompt('Input your number');
-
-    let amount = 0;
-    let result = 'Your result';
-    for (let divider = 1; divider < num; divider++) {
-        if ((num % divider) === 0) {
-            result = result + " " + divider;
-            amount++;
-        }
-    }
-    if (amount>1) {
-        alert(result);
-        alert(`Amount divider ${amount}`);
-    }
-    else {
-        alert('Error');
-    }
-
+function toMoveNum () {
+    let num = prompt ('Input your number');
+    let amount = +prompt ('Input your amount');
+    console.log(num.length);
+    let a = num.length;
+    let part_1 = num.slice(0,amount);
+    console.log (part_1);
+    let part_2 = num.slice(amount);
+    console.log (part_2);
+    let result = part_2+part_1;
+    alert (result);
+    
 }
+
+
 
 
 
