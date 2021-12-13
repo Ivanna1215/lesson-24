@@ -178,65 +178,103 @@ function multiplicationTable() {
 }
 
 function getDay () {
-    let day;
-    let cOntin = 1;
-    let i = 1;
-    while (cOntin) {
-    day = confirm('Monday');
-    cOntin = confirm("Want to continue?"); 
-
- if (cOntin) {
-    day = confirm('Tuesday');
-    cOntin = confirm("Want to continue?"); 
+    let day=1;
+ 
+ 
+    while (day) {
+    day = confirm('Monday.Want to continue?');
     
-    if (cOntin) {
-        day = confirm('Wednesday');
-        cOntin = confirm("Want to continue?"); 
+ if (day) {
+    day = confirm('Tuesday.Want to continue?');
+    
+    if (day) {
+        day = confirm('Wednesday.Want to continue?');
 
-        if (cOntin) {
-            day = confirm('Thursday');
-            cOntin = confirm("Want to continue?"); 
-            if (cOntin) {
-                day = confirm('Friday');
-                cOntin = confirm("Want to continue?"); 
-                if (cOntin) {
-                    day = confirm('Saturday');
-                    cOntin = confirm("Want to continue?"); 
-                    if (cOntin) {
-                        day = confirm('Sanday');
-                        cOntin = confirm("Want to continue?");     
+        if (day) {
+            day = confirm('Thursday.Want to continue?');
+            if (day) {
+                day = confirm('Friday.Want to continue?');
+                if (day) {
+                    day = confirm('Saturday.Want to continue?');
+                    if (day) {
+                        day = confirm('Sanday.Want to continue?');
                 }
     
                 
             }
             else {
-                alert ('1Error') 
+                alert ('Good luck') 
             }
      }
      else {
-         alert ('2Error')
+         alert ('Good luck')
      }
 
 
         }
       else {
-        alert ('3Error')
+        alert ('Good luck')
       }  
  }
  else {
-    alert ('4Error')
+    alert ('Good luck')
  }
 
  }
  else {
-    alert ('5Error')
+    alert ('Good luck')
  }
+ 
 }
 
 }
 
 
-
+function getWeeksDay() { 
+ 
+    alert(`Hello, let's start!`); 
+ 
+    let randomDay = Math.floor(Math.random() * 7); 
+    let question; 
+ 
+ 
+ 
+    for (let i = randomDay; ; i++) { 
+ 
+        switch (i) { 
+            case 0: 
+                question = prompt(`Sunday. Next day?`); 
+                break; 
+            case 1: 
+                question = prompt(`Monday. Next day?`); 
+                break; 
+            case 2: 
+                question = prompt(`Tuesday. Next day?`); 
+                break; 
+            case 3: 
+                question = prompt(`Wednesday. Next day?`); 
+                break; 
+            case 4: 
+                question = prompt(`Thursday. Next day?`); 
+                break; 
+            case 5: 
+                question = prompt(`Friday. Next day?`); 
+                break; 
+            case 6: 
+                question = prompt(`Saturday. Next day?`); 
+                break; 
+        } 
+        if (question == null) { 
+            break 
+        }; 
+ 
+        if (i == 6) { 
+            i = -1; 
+        } 
+ 
+    } 
+    alert(`Good luck`); 
+}
 
 
 
