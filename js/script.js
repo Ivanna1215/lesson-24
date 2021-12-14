@@ -38,7 +38,7 @@ function getDiv() {
 function amountNumber() {
     let num;
     num = prompt('Input your number');
-    if (num > 0) {
+    if (num >= 0) {
         alert(num.length);
     } else {
         alert(num.length - 1);
@@ -96,56 +96,56 @@ function getCalculator() {
         a = +prompt('Input your  first number ');
         b = +prompt('Input last number');
         c = prompt('Input your operator');
-       
-    switch (c) {
-        case '+':
-            result = a + b;
-            alert(result)
-            break;
-        case '-':
-            result = a- b;
-            alert (result);
-            break;
-            case '*':
-                result = a*b;
-                alert (result);
-                break;
-                case '/':
-                    result = a/b;
-                    alert (result);
-                    break;
-                    default:
-                        alert ('This code is incorect')
-                        break;
 
-                    
-                } 
-                num = confirm("Want to continue?");
-                
+        switch (c) {
+            case '+':
+                result = a + b;
+                alert(result)
+                break;
+            case '-':
+                result = a - b;
+                alert(result);
+                break;
+            case '*':
+                result = a * b;
+                alert(result);
+                break;
+            case '/':
+                result = a / b;
+                alert(result);
+                break;
+            default:
+                alert('This code is incorect')
+                break;
+
+
+        }
+        num = confirm("Want to continue?");
+
     }
 
-    while (num)   
+    while (num)
 
 
 }
 
 
-function toMoveNum () {
-    let num = prompt ('Input your number');
-    if (num>0) {
-        let amount = +prompt ('Input your amount');
+function toMoveNum() {
+    let num = prompt('Input your number');
+    if (num > 0) {
+        let amount = +prompt('Input your amount');
         let a = num.length;
-        let part_1 = num.slice(0,amount);
+        let part_1 = num.slice(0, amount);
         let part_2 = num.slice(amount);
-        let result = part_2+part_1;
-        alert (result);
+        let result = part_2 + part_1;
+        alert(result);
 
-      
+
     }
-   
-    else  {
-        alert ('This code is incorect')
-    } 
+
+    else {
+        alert('This code is incorect')
+    }
 }
 
 // function getNum() {
@@ -177,104 +177,215 @@ function multiplicationTable() {
 
 }
 
-function getDay () {
-    let day=1;
- 
- 
+function getDay() {
+    let day = 1;
+
+
     while (day) {
-    day = confirm('Monday.Want to continue?');
-    
- if (day) {
-    day = confirm('Tuesday.Want to continue?');
-    
-    if (day) {
-        day = confirm('Wednesday.Want to continue?');
+        day = confirm('Monday.Want to continue?');
 
         if (day) {
-            day = confirm('Thursday.Want to continue?');
+            day = confirm('Tuesday.Want to continue?');
+
             if (day) {
-                day = confirm('Friday.Want to continue?');
+                day = confirm('Wednesday.Want to continue?');
+
                 if (day) {
-                    day = confirm('Saturday.Want to continue?');
+                    day = confirm('Thursday.Want to continue?');
                     if (day) {
-                        day = confirm('Sanday.Want to continue?');
+                        day = confirm('Friday.Want to continue?');
+                        if (day) {
+                            day = confirm('Saturday.Want to continue?');
+                            if (day) {
+                                day = confirm('Sanday.Want to continue?');
+                            }
+
+
+                        }
+                        else {
+                            alert('Good luck')
+                        }
+                    }
+                    else {
+                        alert('Good luck')
+                    }
+
+
                 }
-    
-                
+                else {
+                    alert('Good luck')
+                }
             }
             else {
-                alert ('Good luck') 
+                alert('Good luck')
             }
-     }
-     else {
-         alert ('Good luck')
-     }
+
+        }
+        else {
+            alert('Good luck')
+        }
+
+    }
+
+}
+
+
+function getWeeksDay() {
+
+    alert(`Hello, let's start!`);
+
+    let randomDay = Math.floor(Math.random() * 7);
+    let question;
+
+
+
+    for (let i = randomDay; ; i++) {
+
+        switch (i) {
+            case 0:
+                question = prompt(`Sunday. Next day?`);
+                break;
+            case 1:
+                question = prompt(`Monday. Next day?`);
+                break;
+            case 2:
+                question = prompt(`Tuesday. Next day?`);
+                break;
+            case 3:
+                question = prompt(`Wednesday. Next day?`);
+                break;
+            case 4:
+                question = prompt(`Thursday. Next day?`);
+                break;
+            case 5:
+                question = prompt(`Friday. Next day?`);
+                break;
+            case 6:
+                question = prompt(`Saturday. Next day?`);
+                break;
+        }
+        if (question == null) {
+            break
+        };
+
+        if (i == 6) {
+            i = -1;
+        }
+
+    }
+    alert(`Good luck`);
+}
+
+function getAllPossibleDays() {
+    let year = +prompt('Input your year');
+    console.log(year);
+   
+
+
+    for (let num = 1; num < 13; num++) {
+
+        switch (num) {
+            case 1:
+                console.log('January');
+                for (let day = 1; day <= 31; day++) {
+                    console.log(day);
+                }
+                break;
+            case 2:
+                console.log('February');
+                if ((year % 400===0 || year % 4 === 0  && year % 100 > 0 )) {
+                    for (let day = 1; day <= 29; day++) {
+                        console.log(day);
+                    }
+                }
+                else {
+                    for (let day = 1; day <= 29; day++) {
+                        console.log(day);
+                    }
+                }
+                break;
+                case 3:
+                    console.log('March');
+                    for (let day = 1; day <= 31; day++) {
+                        console.log(day);
+                    }
+                    break;
+                    case 4:
+                        console.log('April');
+                        for (let day = 1; day <= 30; day++) {
+                            console.log(day);
+                        }
+                        break;
+                        case 5:
+                            console.log('May');
+                            for (let day = 1; day <= 31; day++) {
+                                console.log(day);
+                            }
+                            break;
+                            case 6:
+                                console.log('June');
+                                for (let day = 1; day <= 30; day++) {
+                                    console.log(day);
+                                }
+                                break;
+                                case 7:
+                                    console.log('July');
+                                    for (let day = 1; day <= 31; day++) {
+                                        console.log(day);
+                                    }
+                                    break;
+                                    case 8:
+                                        console.log('August');
+                                        for (let day = 1; day <= 31; day++) {
+                                            console.log(day);
+                                        }
+                                        break;
+                                        case 9:
+                                            console.log('September');
+                                            for (let day = 1; day <= 30; day++) {
+                                                console.log(day);
+                                            }
+                                            break;
+                                            case 10:
+                                                console.log('Oktober');
+                                                for (let day = 1; day <= 31; day++) {
+                                                    console.log(day);
+                                                }
+                                                break;
+                                                case 11:
+                                                    console.log('November');
+                                                    for (let day = 1; day <= 30; day++) {
+                                                        console.log(day);
+                                                    }
+                                                    break;
+                                                    case 12:
+                                                        console.log('December');
+                                                        for (let day = 1; day <= 31; day++) {
+                    console.log(day);
+                }
+                                                        break;
 
 
         }
-      else {
-        alert ('Good luck')
-      }  
- }
- else {
-    alert ('Good luck')
- }
+    }
 
- }
- else {
-    alert ('Good luck')
- }
- 
-}
+
 
 }
 
 
-function getWeeksDay() { 
- 
-    alert(`Hello, let's start!`); 
- 
-    let randomDay = Math.floor(Math.random() * 7); 
-    let question; 
- 
- 
- 
-    for (let i = randomDay; ; i++) { 
- 
-        switch (i) { 
-            case 0: 
-                question = prompt(`Sunday. Next day?`); 
-                break; 
-            case 1: 
-                question = prompt(`Monday. Next day?`); 
-                break; 
-            case 2: 
-                question = prompt(`Tuesday. Next day?`); 
-                break; 
-            case 3: 
-                question = prompt(`Wednesday. Next day?`); 
-                break; 
-            case 4: 
-                question = prompt(`Thursday. Next day?`); 
-                break; 
-            case 5: 
-                question = prompt(`Friday. Next day?`); 
-                break; 
-            case 6: 
-                question = prompt(`Saturday. Next day?`); 
-                break; 
-        } 
-        if (question == null) { 
-            break 
-        }; 
- 
-        if (i == 6) { 
-            i = -1; 
-        } 
- 
-    } 
-    alert(`Good luck`); 
+let i;
+while (i >= 12) {
+    console.log(i);
+    i++;
 }
 
 
+function sampleLast() {
+    let num = 0;
+    while (num < 13) {
+        console.log(num);
+        num++;
 
+    }
+}
