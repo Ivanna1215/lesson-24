@@ -258,7 +258,7 @@ function getWeeksDay() {
 
 
     for (let i = randomDay; ; i++) {
-        
+
 
         switch (i) {
             case 0:
@@ -498,4 +498,21 @@ function sampleLast() {
 function random () {
     let randomDay = Math.floor(Math.random() * 50);
     console.log (randomDay);
+}
+
+function homeWork () {
+    let num = +prompt('Input your number'); 
+    let result = '';
+for (let i =1;i<num;i++ ) {
+    console.log (i);
+    // result = result + i + ' ';
+    if (i % 3 === 0) {
+        console.log ('fuss');
+    }
+     else {
+    //     console.log (i);
+    // }
+
+}
+console.log (result);
 }
