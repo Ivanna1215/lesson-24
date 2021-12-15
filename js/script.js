@@ -178,17 +178,18 @@ function multiplicationTable() {
 }
 
 function getTable() {
-   
+
+
     let c;
     let result;
-    
     for ( let a = 2; a <= 9;a++ ) {
         for (let b = 1; b <=10; b++) {
             c = a*b;
 result = `${a} x ${b} = ${c}`;
 console.log (result);
-
+'<br> <br>'
         }
+        
     }
 }
 
@@ -257,6 +258,7 @@ function getWeeksDay() {
 
 
     for (let i = randomDay; ; i++) {
+        
 
         switch (i) {
             case 0:
@@ -491,4 +493,9 @@ function sampleLast() {
         num++;
 
     }
+}
+
+function random () {
+    let randomDay = Math.floor(Math.random() * 50);
+    console.log (randomDay);
 }
