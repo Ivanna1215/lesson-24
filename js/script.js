@@ -279,7 +279,7 @@ function getWeeksDay() {
 function getAllPossibleDays() {
     let year = +prompt('Input your year');
     console.log(year);
-   
+   let result = ' ';
 
 
     for (let num = 1; num < 13; num++) {
@@ -288,81 +288,167 @@ function getAllPossibleDays() {
             case 1:
                 console.log('January');
                 for (let day = 1; day <= 31; day++) {
-                    console.log(day);
+                  
+                 if (day < 31) {
+                    result = result + day + ', ' ;
+                 }
+else { 
+    result =  result  + day ;
+}
+
                 }
+                console.log (result);
                 break;
             case 2:
                 console.log('February');
+                result = ' ';
                 if ((year % 400===0 || year % 4 === 0  && year % 100 > 0 )) {
                     for (let day = 1; day <= 29; day++) {
-                        console.log(day);
+                        result = result + day + ' ';
                     }
+                    console.log (result);
                 }
                 else {
-                    for (let day = 1; day <= 29; day++) {
-                        console.log(day);
+                    for (let day = 1; day <= 28; day++) {
+                        result = result + day + ' ';
                     }
+                    console.log (result);
                 }
                 break;
                 case 3:
                     console.log('March');
+                    result = ' ';
                     for (let day = 1; day <= 31; day++) {
-                        console.log(day);
+                        if (day < 31) {
+                            result = result + day + ', ' ;
+                         }
+        else { 
+            result =  result  + day ;
+        }
                     }
+                    console.log (result);
                     break;
                     case 4:
                         console.log('April');
+                        result = ' ';
                         for (let day = 1; day <= 30; day++) {
-                            console.log(day);
+                            if (day < 30) {
+                                result = result + day + ', ' ;
+                             }
+            else { 
+                result =  result  + day ;
+            }
                         }
+                        console.log (result);
                         break;
                         case 5:
                             console.log('May');
+                            result = ' ';
                             for (let day = 1; day <= 31; day++) {
-                                console.log(day);
+                                if (day < 31) {
+                                    result = result + day + ', ' ;
+                                 }
+                else { 
+                    result =  result  + day ;
+                }
+
                             }
+                            console.log (result);
                             break;
                             case 6:
                                 console.log('June');
+                                result = ' ';
                                 for (let day = 1; day <= 30; day++) {
-                                    console.log(day);
+                                    if (day < 31) {
+                                        result = result + day + ', ' ;
+                                     }
+                    else { 
+                        result =  result  + day ;
+                    }
                                 }
+                                console.log (result);
                                 break;
                                 case 7:
                                     console.log('July');
+                                    result = ' ';
                                     for (let day = 1; day <= 31; day++) {
-                                        console.log(day);
+                                        if (day < 31) {
+                                            result = result + day + ', ' ;
+                                         }
+                        else { 
+                            result =  result  + day ;
+                        }
                                     }
+                                    console.log (result);
                                     break;
                                     case 8:
                                         console.log('August');
+                                        result = ' ';
                                         for (let day = 1; day <= 31; day++) {
-                                            console.log(day);
+                                            if (day < 31) {
+                                                result = result + day + ', ' ;
+                                             }
+                            else { 
+                                result =  result  + day ;
+                            }
                                         }
+                                        console.log (result);
                                         break;
                                         case 9:
                                             console.log('September');
+                                            result = ' ';
                                             for (let day = 1; day <= 30; day++) {
-                                                console.log(day);
+                                                if (day < 30) {
+                                                    result = result + day + ', ' ;
+                                                 }
+                                else { 
+                                    result =  result  + day ;
+                                }
+                                                
                                             }
+                                            console.log (result);
                                             break;
                                             case 10:
                                                 console.log('Oktober');
+                                                result = ' ';
                                                 for (let day = 1; day <= 31; day++) {
-                                                    console.log(day);
+                                                    if (day < 31) {
+                                                        result = result + day + ', ' ;
+                                                     }
+                                    else { 
+                                        result =  result  + day ;
+                                    }
+                                                    
                                                 }
+                                                console.log (result);
                                                 break;
                                                 case 11:
                                                     console.log('November');
+                                                    result = ' ';
                                                     for (let day = 1; day <= 30; day++) {
-                                                        console.log(day);
+                                                        if (day < 30) {
+                                                            result = result + day + ', ' ;
+                                                         }
+                                        else { 
+                                            result =  result  + day ;
+                                        }
+                                                       
                                                     }
+                                                    console.log (result);
                                                     break;
                                                     case 12:
                                                         console.log('December');
+                                                        result = ' ';
                                                         for (let day = 1; day <= 31; day++) {
-                    console.log(day);
+                                                            if (day < 31) {
+                                                                result = result + day + ', ' ;
+                                                             }
+                                            else { 
+                                                result =  result  + day ;
+                                            }
+                                                            
                 }
+                console.log (result);
                                                         break;
 
 
