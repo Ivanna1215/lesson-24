@@ -177,6 +177,23 @@ function multiplicationTable() {
 
 }
 
+function getTable() {
+   
+    let c;
+    let result;
+    
+    for ( let a = 2; a <= 9;a++ ) {
+        for (let b = 1; b <=10; b++) {
+            c = a*b;
+result = `${a} x ${b} = ${c}`;
+console.log (result);
+
+        }
+    }
+}
+
+
+
 function getDay() {
     let day = 1;
 
