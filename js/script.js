@@ -500,19 +500,13 @@ function random () {
     console.log (randomDay);
 }
 
-function homeWork () {
-    let num = +prompt('Input your number'); 
+function table2 () {
     let result = '';
-for (let i =1;i<num;i++ ) {
-    console.log (i);
-    // result = result + i + ' ';
-    if (i % 3 === 0) {
-        console.log ('fuss');
-    }
-     else {
-    //     console.log (i);
-    // }
-
-}
+    for (let i = 2; i<=9; i++) {
+        for (let j = 1; j<=10; j++) {
+result = i + 'x' + j + '=' + (i*j);
 console.log (result);
+        }
+        console.log ('');
+    }
 }
