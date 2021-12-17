@@ -533,7 +533,12 @@ function stringStar() {
             console.log(a);
         } else {
             for (let j = 1; j <= 8; j++) {
-                b = b + "# ";
+               
+if (j === 5 || j === 2) {
+ b = b + "* ";
+} else {
+    b = b + '# ';
+}
             }
             console.log (b);
             b = '';
