@@ -511,30 +511,34 @@ function table2() {
     }
 }
 
+function table3() {
+    let result = '';
+    for (let i = 2; i <= 9; i++) {
+        for (let j = 1; j <= 10; j++) {
+            result = i + 'x' + j + '=' + (i * j);
+            console.log(result);
+        }
+        console.log('');
+    }
+}
+
 function stringStar() {
     let a = '';
     let b = '';
-
     for (let i = 1; i <= 8; i++) {
         if (i === 7) {
             for (let j = 1; j <= 8; j++) {
-                a = a + '& ';
+            a = a + '& ';
             }
             console.log(a);
         } else {
-            a = a + '$ ';
+            for (let j = 1; j <= 8; j++) {
+                b = b + "# ";
+            }
+            console.log (b);
+            b = '';
         }
-        a = ' '
-        console.log (a);
-        // for (let k=1; k<=8; k++) {
-        //     if (k===4 || k ===7) {
-        //         b = b + '* ';
-                
-        //     }
-       
-        // }
-        // console.log (b);
-    }
-  
 
+
+    }
 }
